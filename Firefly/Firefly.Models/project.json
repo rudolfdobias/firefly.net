@@ -1,0 +1,35 @@
+﻿{
+    "version": "1.0.0-*",
+    "title": "Firefly.Models",
+    "authors": ["Rudolf Dobias et al."],
+
+    "buildOptions": {
+        "debugType": "portable",
+        "allowUnsafe": true,
+        "xmlDoc": true,
+        "compile": [
+            "../Shared/*.cs"
+        ]
+    },
+    "packOptions": {
+        "owners": [
+            "Rudolf Dobias et al."
+        ],
+        "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "requireLicenseAcceptance": false,
+        "tags": [
+            ".net core api"
+        ]
+    },
+  "dependencies": {
+     "NETStandard.Library": "1.6.0",
+     "Microsoft.AspNetCore.Identity": "1.1.0",
+     "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.0",
+     "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.0"
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

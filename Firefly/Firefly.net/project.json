@@ -1,0 +1,35 @@
+﻿{
+  "version": "1.0.0-*",
+  "title": "Firefly.net",
+  "authors": ["Rudolf Dobias et al."],
+
+  "buildOptions": {
+      "debugType": "portable",
+      "allowUnsafe": true,
+      "xmlDoc": true,
+      "compile": [
+          "../Shared/*.cs"
+      ]
+  },
+  "packOptions": {
+      "owners": [
+          "Rudolf Dobias et al."
+      ],
+      "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+      "requireLicenseAcceptance": false,
+      "tags": [
+          ".net core api"
+      ]
+  },
+  "dependencies": {
+     "Firefly.Extensions": { "target" : "project", "include": "all"},
+     "Firefly.Helpers": { "target": "project", "include": "all"},
+     "Firefly.Models": { "target": "project", "include": "all"},
+     "Firefly.Repository": { "target": "project", "include": "all"}
+  },
+  "frameworks": {
+    "netstandard1.6": {
+
+    }
+  }
+}

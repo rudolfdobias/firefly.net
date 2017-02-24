@@ -1,0 +1,37 @@
+﻿{
+    "version": "1.0.0-*",
+    "title": "Firefly.Repository",
+    "authors": ["Rudolf Dobias et al."],
+
+    "buildOptions": {
+        "debugType": "portable",
+        "allowUnsafe": true,
+        "xmlDoc": true,
+        "compile": [
+            "../Shared/*.cs"
+        ]
+    },
+    "packOptions": {
+        "owners": [
+            "Rudolf Dobias et al."
+        ],
+        "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+        "requireLicenseAcceptance": false,
+        "tags": [
+            ".net core api"
+        ]
+    },
+    "dependencies": {
+        "NETStandard.Library": "1.6.0",
+        "Microsoft.AspNetCore.Mvc": "1.1.0",
+        "Microsoft.EntityFrameworkCore": "1.1.0",
+        "Firefly.Models": { "target": "project" },
+        "Firefly.Helpers": { "target": "project" },
+        "Firefly.Extensions": { "target": "project" }
+    },
+    "frameworks": {
+        "netstandard1.6": {
+            "imports": "dnxcore50"
+        }
+    }
+}
